@@ -1,6 +1,6 @@
 # Node.js API with Socket.io and Charts.js
 
-This project is a web application for visualizing real time sensor data. It allows users to filter sensor data based on equipment and different time intervals and view the data in a graphical representation. The application consists of a client-side interface built with HTML, CSS, and JavaScript, a server-side application developed using Node.js and Express.js, and a MySQL database for storing sensor data. The real time communication between client and server is done through integration with Socket.Io.
+This project is a web application for visualizing real-time sensor data. It allows users to filter sensor data based on equipment and different time intervals and view the data in a graphical representation. The application consists of a client-side interface built with HTML, CSS, and JavaScript, a server-side application developed using Node.js and Express.js, and a MySQL database for storing sensor data. The real-time communication between client and server is done through integration with Socket.Io.
 
 ![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -9,7 +9,7 @@ This project is a web application for visualizing real time sensor data. It allo
 
 ## Features
 
-- **Line Chart Visualisation**: the application returns a line chart showing different sensor data over time. It is possible to filter the values by Equipment Id and change the visualisation intervals by clicking the available buttons (last 24h, last 48h, last week and last month).
+- **Line Chart Visualisation**: the application returns a line chart showing different sensor data over time. It is possible to filter the values by Equipment ID and change the visualization intervals by clicking the available buttons (last 24 hours, last 48 hours, last week and last month).
 
 - **CSV Upload**: The API provides an endpoint for uploading CSV files containing the respective columns: equipmentId; timestamp; value. This feature allows for manual late insertion of data (past current timestamp) in case sensors stop working.
 
@@ -66,7 +66,7 @@ or
 node index.js
 ```
 
-2. Access the client by oppening the `client/index.html` file on your browser.
+2. Access the client by opening the `client/index.html`` file on your browser.
 
 3. Upload a CSV file directly through the API endpoints.
 
