@@ -1,0 +1,9 @@
+CREATE TABLE equipments (id VARCHAR(8) NOT NULL PRIMARY KEY);
+
+CREATE TABLE sensor_data (
+    equipmentId VARCHAR(8) NOT NULL,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    value DECIMAL(10, 2) NOT NULL,
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    FOREIGN KEY (equipmentId) REFERENCES equipments(id)
+);
