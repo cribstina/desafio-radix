@@ -110,6 +110,20 @@ node index.js
 | :------------ | :----------- | :-------------------------------------------- |
 | `equipmentId` | `VARCHAR(8)` | **Not null**. Id of equipment to be selected. |
 
+## Database
+
+### ER Model
+
+![](/database-models/ERM.png)
+
+### Logical Data Model
+
+![](/database-models/LDM.png)
+
+### SQL file
+
+- [Database code](/server/db.sql)
+
 ## References
 
 - [Express docs](https://expressjs.com/pt-br/4x/api.html)
