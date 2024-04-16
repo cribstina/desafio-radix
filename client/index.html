@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line Graph</title>
+  <!-- Include Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Include the date adapter for Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+
+<body>
+  <canvas id="lineChart" width="800" height="400"></canvas>
+  <form id="filterForm">
+    <label for="equipmentId">Equipment ID:</label>
+    <input type="text" id="equipmentId" name="equipmentId">
+    <button type="submit">Filter Data</button>
+  </form>
+  <!-- Add buttons for changing intervals -->
+  <div id="intervalButtons">
+  <input type="radio" id="last24h" name="interval" value="24h" checked>
+  <label for="last24h">Last 24 hours</label>
+  
+  <input type="radio" id="last48h" name="interval" value="48h">
+  <label for="last48h">Last 48 hours</label>
+  
+  <input type="radio" id="lastWeek" name="interval" value="week">
+  <label for="lastWeek">Last week</label>
+  
+  <input type="radio" id="lastMonth" name="interval" value="month">
+  <label for="lastMonth">Last month</label>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
