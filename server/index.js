@@ -8,11 +8,12 @@ const taskRequestRouter = require("./routes/taskRequest");
 const fileUploadRouter = require("./routes/fileUpload");
 const sensorDataRouter = require("./routes/sensorData");
 
+// * REPLACE WITH YOUR CREDENTIALS
 const pool = mysql.createPool({
   host: "localhost",
-  user: "root",
-  password: "12345",
-  database: "test",
+  user: "your_user",
+  password: "your_password",
+  database: "your_database",
 });
 
 // Require the routers
