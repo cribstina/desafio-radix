@@ -2,11 +2,12 @@ const express = require("express");
 const router = express.Router();
 const mysql = require("mysql2");
 
+// * REPLACE WITH YOUR CREDENTIALS
 const pool = mysql.createPool({
   host: "localhost",
-  user: "root",
-  password: "12345",
-  database: "test",
+  user: "your_user",
+  password: "your_password",
+  database: "your_database",
 });
 
 router.get("/", (req, res) => {
